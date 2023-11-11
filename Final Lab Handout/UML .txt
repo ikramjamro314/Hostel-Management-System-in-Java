@@ -1,0 +1,61 @@
++----------------------------------------+
+|               Hostel                   |
++----------------------------------------+
+| -name: String                          |
+| -No_of_Rooms: int                      |
+| -rent_per_Student: int                  |
+| -location: String                       |
+| -rooms: ArrayList<Room>                |
+| -students: ArrayList<Student>          |
++----------------------------------------+
+| +Hostel(name: String, location: String,|
+|   rent_per_Student: int, No_of_Rooms: int)|
+| +getAvailableRooms(): ArrayList<Room>   |
+| +add_Student(s1: Student): void         |
+| +remove_Student(s: Student): void       |
+| +admission_In_Hostel(student: Student, |
+|   room: Room): void                      |
+| +out_from_hostel(student: Student): void|
+| +print_Students_details(): void         |
+| +Print_Hostel_Details(): void           |
++----------------------------------------+
+
+Room
+--------
+<<interface>> Rooms
+------------------
++ occupy(): void
++ vacancy(): void
+
++----------------------------------------+
+|                Room                    |
++----------------------------------------+
+| -room_no: int                          |
+| -capacity: int                         |
+| -occupancy: int                        |
+| -is_Occupied: boolean                  |
++----------------------------------------+
+| +Room(room_no: int, capacity: int,     |
+|   occupancy: int)                       |
+| +isIs_Occupied(is_Occupied: boolean): void|
+| +is_Available(): boolean               |
+| +get_Room_No(): int                    |
+| +occupy(): void                        |
+| +vacancy(): void                       |
++----------------------------------------+
+
++----------------------------------------+
+|               Student                  |
++----------------------------------------+
+| -name: String                          |
+| -Contact: long                         |
+| -cnic: long                            |
+| -room: Room                            |
++----------------------------------------+
+| +Student(name: String, Contact: long,  |
+|   cnic: long)                           |
+| +get_details(): String                 |
+| +set_Room(room: Room): void            |
+| +getRoom(): Room                       |
+| +getName(): String                     |
++----------------------------------------+
